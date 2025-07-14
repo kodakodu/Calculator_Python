@@ -7,6 +7,7 @@ main_window.setWindowTitle("Calculator App")
 main_window.resize(250,300)
 
 
+
 # Design
 
 # Show/Run
