@@ -6,6 +6,12 @@ main_window = QWidget()
 main_window.setWindowTitle("Calculator App")
 main_window.resize(250,300)
 
+#All objects/widgets
+
+text_box = QLineEdit()
+grid = QGridLayout()
+
+buttons = ["7","8","9","/","4","5","6","*","1","2","3","-","0",".","=","+"]
 
 
 # Design
