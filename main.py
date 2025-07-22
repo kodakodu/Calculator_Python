@@ -1,5 +1,5 @@
 # Imports
-from PyQt5.QtWidgets import QApplication,QWidget, QLineEdit, QPushButton, QHBoxLayout, QVBoxLayout, QGridLayout
+from PyQt5.QtWidgets import (QApplication,QWidget, QLineEdit, QPushButton, QHBoxLayout, QVBoxLayout, QGridLayout)
 # App settings
 app =QApplication([])
 main_window = QWidget()
@@ -8,7 +8,7 @@ main_window.resize(250,300)
 
 #All objects/widgets
 
-text_box = QLineEdit()
+text_box= QLineEdit()
 grid = QGridLayout()
 
 buttons = [
@@ -20,8 +20,24 @@ buttons = [
 clear = QPushButton("Clear")
 delete = QPushButton("<")
 
+
+
 # Design
 
+
+master_layout = QVBoxLayout()
+master_layout.addWidget(text_box)
+#master_layout.addWidget(grid)
+
+button_row = QHBoxLayout()
+button_row.addWidget(clear)
+button_row.addWidget(delete)
+
+master_layout.addWidget(button_row)
+
+
+
+main_window.setLayout(master_layout)
 
 
 # Show/Run
